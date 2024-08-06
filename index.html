@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gerador de QrCode</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+        <link rel="icon" type="image/x-icon" href="qr-code.svg">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="qrcodeGenerator.js" async defer></script>
+
+    </head>
+    <body>
+        <header>
+            <h2>Gerar QRCODE</h2>
+        </header>
+        <main>
+            <div class="st-section">
+                <input type="text" id="url" placeholder="Digite uma URL">
+                <button class="btn-info" onclick="generateQRCode()">Gerar</button>
+                <button class="btn-limpa" onclick="limparURL()">Limpar URL</button>
+            
+                <div id="qrcode">
+                </div>
+                <button class="btn-info" id="download" style="display: none;">
+                    <a id="downloadLink" download="qrcode.png">Baixar QRCode</a>
+                </button>
+        </div>
+        </main>      
+        
+        <footer>
+            
+                <a href="https://github.com/A-Marvulle"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/alfredoperesmarvulle-87920a1b7/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=5511976007382&text=&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:alfredo.marvulle@gmail.com"><i class="fa fa-at"></i></a>
+            
+        </footer>
+        
+    </body>
+</html>
